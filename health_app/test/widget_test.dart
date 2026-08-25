@@ -11,12 +11,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:health_app/main.dart';
 
 void main() {
-  testWidgets('shows the app intro and path chooser by default', (WidgetTester tester) async {
+  testWidgets('shows the role chooser by default', (WidgetTester tester) async {
     await tester.pumpWidget(const ProviderScope(child: MyApp()));
+    await tester.pumpAndSettle();
 
-    expect(find.text('Heallio'), findsOneWidget);
-    expect(find.text('What are you here as?'), findsOneWidget);
-    expect(find.text('Patient'), findsOneWidget);
-    expect(find.text('Doctor'), findsOneWidget);
+    expect(find.text('Initialize Profile'), findsOneWidget);
+    expect(find.text('Patient Access'), findsOneWidget);
+    expect(find.text('Clinical Authority'), findsOneWidget);
   });
 }

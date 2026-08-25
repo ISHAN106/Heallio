@@ -99,7 +99,7 @@ def create_user(user: UserCreate, request: Request, db: Session = Depends(get_db
     # Check if email already exists
     db_user = (
         db.query(User)
-        .filter(User.email.ilike(normalized_email))
+        .filter(User.email == normalized_email)
         .first()
     )
     if db_user:
@@ -235,7 +235,7 @@ async def login_user(request: Request, db: Session = Depends(get_db)):
             detail="Account temporarily locked due to repeated failed logins.",
         )
 
-    db_user = db.query(User).filter(User.email.ilike(username)).first()
+    db_user = db.query(User).filter(User.email == username).first()
 
     # Verify identity (existence + password) fully before checking role, and
     # use the same generic message for both failure modes. Checking role first

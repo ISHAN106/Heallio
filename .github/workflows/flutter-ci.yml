@@ -1,0 +1,37 @@
+name: Flutter CI
+
+on:
+  push:
+    paths:
+      - 'health_app/**'
+      - '.github/workflows/flutter-ci.yml'
+  pull_request:
+    paths:
+      - 'health_app/**'
+      - '.github/workflows/flutter-ci.yml'
+
+jobs:
+  analyze-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Install dependencies
+        working-directory: health_app
+        run: flutter pub get
+
+      - name: Analyze
+        working-directory: health_app
+        run: flutter analyze
+
+      - name: Run tests
+        working-directory: health_app
+        run: flutter test

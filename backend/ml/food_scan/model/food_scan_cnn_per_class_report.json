@@ -1,0 +1,1082 @@
+{
+  "overall_val_accuracy": 0.7737,
+  "num_val_samples": 4132,
+  "classes_with_zero_val_samples": [],
+  "per_class": [
+    {
+      "class": "aloo_gobi",
+      "val_samples": 7,
+      "correct": 0,
+      "accuracy": 0.0,
+      "top_confusion": {
+        "predicted_as": "kadai_paneer",
+        "count": 2
+      }
+    },
+    {
+      "class": "chicken_tikka",
+      "val_samples": 7,
+      "correct": 0,
+      "accuracy": 0.0,
+      "top_confusion": {
+        "predicted_as": "butter_chicken",
+        "count": 2
+      }
+    },
+    {
+      "class": "chicken_tikka_masala",
+      "val_samples": 7,
+      "correct": 0,
+      "accuracy": 0.0,
+      "top_confusion": {
+        "predicted_as": "butter_chicken",
+        "count": 5
+      }
+    },
+    {
+      "class": "double_ka_meetha",
+      "val_samples": 7,
+      "correct": 1,
+      "accuracy": 0.1429,
+      "top_confusion": {
+        "predicted_as": "qubani_ka_meetha",
+        "count": 2
+      }
+    },
+    {
+      "class": "kajjikaya",
+      "val_samples": 7,
+      "correct": 1,
+      "accuracy": 0.1429,
+      "top_confusion": {
+        "predicted_as": "samosa",
+        "count": 2
+      }
+    },
+    {
+      "class": "basundi",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "rabri",
+        "count": 3
+      }
+    },
+    {
+      "class": "dum_aloo",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "kadhi_pakoda",
+        "count": 1
+      }
+    },
+    {
+      "class": "karela_bharta",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "bhindi_masala",
+        "count": 4
+      }
+    },
+    {
+      "class": "ledikeni",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "bandar_laddu",
+        "count": 2
+      }
+    },
+    {
+      "class": "litti_chokha",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "kadhi_pakoda",
+        "count": 2
+      }
+    },
+    {
+      "class": "malapua",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "cham_cham",
+        "count": 1
+      }
+    },
+    {
+      "class": "phirni",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "cham_cham",
+        "count": 1
+      }
+    },
+    {
+      "class": "sandesh",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "pizza_slice",
+        "count": 1
+      }
+    },
+    {
+      "class": "sheera",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "apple_pie",
+        "count": 1
+      }
+    },
+    {
+      "class": "sohan_halwa",
+      "val_samples": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
+      "top_confusion": {
+        "predicted_as": "chikki",
+        "count": 1
+      }
+    },
+    {
+      "class": "aloo_shimla_mirch",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "poha",
+        "count": 1
+      }
+    },
+    {
+      "class": "butter_chicken",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "aloo_matar",
+        "count": 2
+      }
+    },
+    {
+      "class": "chana_masala",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "boondi",
+        "count": 2
+      }
+    },
+    {
+      "class": "chhena_kheeri",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "qubani_ka_meetha",
+        "count": 1
+      }
+    },
+    {
+      "class": "gulab_jamun",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "ledikeni",
+        "count": 2
+      }
+    },
+    {
+      "class": "kachori",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "pithe",
+        "count": 1
+      }
+    },
+    {
+      "class": "kadhi_pakoda",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "aloo_matar",
+        "count": 2
+      }
+    },
+    {
+      "class": "kofta",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "kuzhi_paniyaram",
+        "count": 2
+      }
+    },
+    {
+      "class": "pithe",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "taquito",
+        "count": 2
+      }
+    },
+    {
+      "class": "qubani_ka_meetha",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "french_fries",
+        "count": 1
+      }
+    },
+    {
+      "class": "rabri",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "gulab_jamun",
+        "count": 1
+      }
+    },
+    {
+      "class": "sohan_papdi",
+      "val_samples": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
+      "top_confusion": {
+        "predicted_as": "sutar_feni",
+        "count": 3
+      }
+    },
+    {
+      "class": "aloo_matar",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "aloo_methi",
+        "count": 1
+      }
+    },
+    {
+      "class": "anarsa",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "bandar_laddu",
+        "count": 1
+      }
+    },
+    {
+      "class": "bandar_laddu",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "rasgulla",
+        "count": 2
+      }
+    },
+    {
+      "class": "bhatura",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "chole_bhature",
+        "count": 2
+      }
+    },
+    {
+      "class": "chak_hao_kheer",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "chai",
+        "count": 1
+      }
+    },
+    {
+      "class": "cham_cham",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "rasgulla",
+        "count": 1
+      }
+    },
+    {
+      "class": "dal_tadka",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "kadhi_pakoda",
+        "count": 1
+      }
+    },
+    {
+      "class": "dharwad_pedha",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "sushi",
+        "count": 1
+      }
+    },
+    {
+      "class": "doodhpak",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "sheer_korma",
+        "count": 1
+      }
+    },
+    {
+      "class": "gajar_ka_halwa",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "crispy_chicken",
+        "count": 2
+      }
+    },
+    {
+      "class": "kalakand",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "sandesh",
+        "count": 2
+      }
+    },
+    {
+      "class": "lyangcha",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "donut",
+        "count": 2
+      }
+    },
+    {
+      "class": "modak",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "ariselu",
+        "count": 1
+      }
+    },
+    {
+      "class": "mysore_pak",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "misi_roti",
+        "count": 1
+      }
+    },
+    {
+      "class": "navrattan_korma",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "tacos",
+        "count": 1
+      }
+    },
+    {
+      "class": "paneer_butter_masala",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "chapati",
+        "count": 1
+      }
+    },
+    {
+      "class": "ras_malai",
+      "val_samples": 7,
+      "correct": 4,
+      "accuracy": 0.5714,
+      "top_confusion": {
+        "predicted_as": "kalakand",
+        "count": 1
+      }
+    },
+    {
+      "class": "chicken_curry",
+      "val_samples": 150,
+      "correct": 96,
+      "accuracy": 0.64,
+      "top_confusion": {
+        "predicted_as": "omelette",
+        "count": 11
+      }
+    },
+    {
+      "class": "crispy_chicken",
+      "val_samples": 225,
+      "correct": 157,
+      "accuracy": 0.6978,
+      "top_confusion": {
+        "predicted_as": "pakode",
+        "count": 6
+      }
+    },
+    {
+      "class": "tacos",
+      "val_samples": 225,
+      "correct": 157,
+      "accuracy": 0.6978,
+      "top_confusion": {
+        "predicted_as": "hot_dog",
+        "count": 15
+      }
+    },
+    {
+      "class": "aloo_methi",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "bhindi_masala",
+        "count": 2
+      }
+    },
+    {
+      "class": "ariselu",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "lyangcha",
+        "count": 1
+      }
+    },
+    {
+      "class": "biryani",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "poha",
+        "count": 2
+      }
+    },
+    {
+      "class": "chicken_razala",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "chhena_kheeri",
+        "count": 1
+      }
+    },
+    {
+      "class": "daal_baati_churma",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "daal_puri",
+        "count": 1
+      }
+    },
+    {
+      "class": "daal_puri",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "chole_bhature",
+        "count": 1
+      }
+    },
+    {
+      "class": "imarti",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "kakinada_khaja",
+        "count": 1
+      }
+    },
+    {
+      "class": "kakinada_khaja",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "lyangcha",
+        "count": 1
+      }
+    },
+    {
+      "class": "misti_doi",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "ras_malai",
+        "count": 1
+      }
+    },
+    {
+      "class": "palak_paneer",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "bhindi_masala",
+        "count": 2
+      }
+    },
+    {
+      "class": "pootharekulu",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "kulfi",
+        "count": 1
+      }
+    },
+    {
+      "class": "shrikhand",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "kadhi_pakoda",
+        "count": 1
+      }
+    },
+    {
+      "class": "unni_appam",
+      "val_samples": 7,
+      "correct": 5,
+      "accuracy": 0.7143,
+      "top_confusion": {
+        "predicted_as": "cham_cham",
+        "count": 1
+      }
+    },
+    {
+      "class": "chole_bhature",
+      "val_samples": 56,
+      "correct": 42,
+      "accuracy": 0.75,
+      "top_confusion": {
+        "predicted_as": "bhatura",
+        "count": 3
+      }
+    },
+    {
+      "class": "kulfi",
+      "val_samples": 32,
+      "correct": 24,
+      "accuracy": 0.75,
+      "top_confusion": {
+        "predicted_as": "lassi",
+        "count": 2
+      }
+    },
+    {
+      "class": "kadai_paneer",
+      "val_samples": 57,
+      "correct": 43,
+      "accuracy": 0.7544,
+      "top_confusion": {
+        "predicted_as": "bhindi_masala",
+        "count": 4
+      }
+    },
+    {
+      "class": "kaathi_rolls",
+      "val_samples": 41,
+      "correct": 31,
+      "accuracy": 0.7561,
+      "top_confusion": {
+        "predicted_as": "sandwich",
+        "count": 2
+      }
+    },
+    {
+      "class": "apple_pie",
+      "val_samples": 150,
+      "correct": 115,
+      "accuracy": 0.7667,
+      "top_confusion": {
+        "predicted_as": "ice_cream",
+        "count": 6
+      }
+    },
+    {
+      "class": "cheesecake",
+      "val_samples": 150,
+      "correct": 115,
+      "accuracy": 0.7667,
+      "top_confusion": {
+        "predicted_as": "apple_pie",
+        "count": 10
+      }
+    },
+    {
+      "class": "chapati",
+      "val_samples": 56,
+      "correct": 43,
+      "accuracy": 0.7679,
+      "top_confusion": {
+        "predicted_as": "naan",
+        "count": 4
+      }
+    },
+    {
+      "class": "naan",
+      "val_samples": 53,
+      "correct": 41,
+      "accuracy": 0.7736,
+      "top_confusion": {
+        "predicted_as": "chapati",
+        "count": 7
+      }
+    },
+    {
+      "class": "baked_potato",
+      "val_samples": 225,
+      "correct": 178,
+      "accuracy": 0.7911,
+      "top_confusion": {
+        "predicted_as": "taquito",
+        "count": 7
+      }
+    },
+    {
+      "class": "momos",
+      "val_samples": 48,
+      "correct": 38,
+      "accuracy": 0.7917,
+      "top_confusion": {
+        "predicted_as": "chai",
+        "count": 2
+      }
+    },
+    {
+      "class": "taquito",
+      "val_samples": 225,
+      "correct": 179,
+      "accuracy": 0.7956,
+      "top_confusion": {
+        "predicted_as": "sandwich",
+        "count": 10
+      }
+    },
+    {
+      "class": "ice_cream",
+      "val_samples": 150,
+      "correct": 120,
+      "accuracy": 0.8,
+      "top_confusion": {
+        "predicted_as": "apple_pie",
+        "count": 9
+      }
+    },
+    {
+      "class": "omelette",
+      "val_samples": 150,
+      "correct": 123,
+      "accuracy": 0.82,
+      "top_confusion": {
+        "predicted_as": "apple_pie",
+        "count": 5
+      }
+    },
+    {
+      "class": "sushi",
+      "val_samples": 150,
+      "correct": 123,
+      "accuracy": 0.82,
+      "top_confusion": {
+        "predicted_as": "apple_pie",
+        "count": 4
+      }
+    },
+    {
+      "class": "dal_makhani",
+      "val_samples": 51,
+      "correct": 42,
+      "accuracy": 0.8235,
+      "top_confusion": {
+        "predicted_as": "dal_tadka",
+        "count": 3
+      }
+    },
+    {
+      "class": "pakode",
+      "val_samples": 40,
+      "correct": 33,
+      "accuracy": 0.825,
+      "top_confusion": {
+        "predicted_as": "crispy_chicken",
+        "count": 1
+      }
+    },
+    {
+      "class": "fried_rice",
+      "val_samples": 52,
+      "correct": 43,
+      "accuracy": 0.8269,
+      "top_confusion": {
+        "predicted_as": "poha",
+        "count": 6
+      }
+    },
+    {
+      "class": "hot_dog",
+      "val_samples": 232,
+      "correct": 193,
+      "accuracy": 0.8319,
+      "top_confusion": {
+        "predicted_as": "tacos",
+        "count": 8
+      }
+    },
+    {
+      "class": "sandwich",
+      "val_samples": 225,
+      "correct": 189,
+      "accuracy": 0.84,
+      "top_confusion": {
+        "predicted_as": "hot_dog",
+        "count": 8
+      }
+    },
+    {
+      "class": "pav_bhaji",
+      "val_samples": 45,
+      "correct": 38,
+      "accuracy": 0.8444,
+      "top_confusion": {
+        "predicted_as": "aloo_shimla_mirch",
+        "count": 1
+      }
+    },
+    {
+      "class": "pizza_slice",
+      "val_samples": 41,
+      "correct": 35,
+      "accuracy": 0.8537,
+      "top_confusion": {
+        "predicted_as": "tacos",
+        "count": 1
+      }
+    },
+    {
+      "class": "adhirasam",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "kachori",
+        "count": 1
+      }
+    },
+    {
+      "class": "boondi",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "aloo_matar",
+        "count": 1
+      }
+    },
+    {
+      "class": "chikki",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "anarsa",
+        "count": 1
+      }
+    },
+    {
+      "class": "gavvalu",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "shankarpali",
+        "count": 1
+      }
+    },
+    {
+      "class": "ghevar",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "dal_makhani",
+        "count": 1
+      }
+    },
+    {
+      "class": "kuzhi_paniyaram",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "kofta",
+        "count": 1
+      }
+    },
+    {
+      "class": "lassi",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "chai",
+        "count": 1
+      }
+    },
+    {
+      "class": "maach_jhol",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "sandwich",
+        "count": 1
+      }
+    },
+    {
+      "class": "makki_di_roti_sarson_da_saag",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "dosa",
+        "count": 1
+      }
+    },
+    {
+      "class": "misi_roti",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "mysore_pak",
+        "count": 1
+      }
+    },
+    {
+      "class": "poornalu",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "bandar_laddu",
+        "count": 1
+      }
+    },
+    {
+      "class": "shankarpali",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "bandar_laddu",
+        "count": 1
+      }
+    },
+    {
+      "class": "sheer_korma",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "doodhpak",
+        "count": 1
+      }
+    },
+    {
+      "class": "sutar_feni",
+      "val_samples": 7,
+      "correct": 6,
+      "accuracy": 0.8571,
+      "top_confusion": {
+        "predicted_as": "misi_roti",
+        "count": 1
+      }
+    },
+    {
+      "class": "donut",
+      "val_samples": 225,
+      "correct": 195,
+      "accuracy": 0.8667,
+      "top_confusion": {
+        "predicted_as": "hot_dog",
+        "count": 5
+      }
+    },
+    {
+      "class": "burger",
+      "val_samples": 49,
+      "correct": 43,
+      "accuracy": 0.8776,
+      "top_confusion": {
+        "predicted_as": "sandwich",
+        "count": 2
+      }
+    },
+    {
+      "class": "french_fries",
+      "val_samples": 225,
+      "correct": 199,
+      "accuracy": 0.8844,
+      "top_confusion": {
+        "predicted_as": "tacos",
+        "count": 6
+      }
+    },
+    {
+      "class": "idli",
+      "val_samples": 45,
+      "correct": 40,
+      "accuracy": 0.8889,
+      "top_confusion": {
+        "predicted_as": "kuzhi_paniyaram",
+        "count": 2
+      }
+    },
+    {
+      "class": "samosa",
+      "val_samples": 36,
+      "correct": 32,
+      "accuracy": 0.8889,
+      "top_confusion": {
+        "predicted_as": "kaathi_rolls",
+        "count": 2
+      }
+    },
+    {
+      "class": "paani_puri",
+      "val_samples": 21,
+      "correct": 19,
+      "accuracy": 0.9048,
+      "top_confusion": {
+        "predicted_as": "kuzhi_paniyaram",
+        "count": 1
+      }
+    },
+    {
+      "class": "jalebi",
+      "val_samples": 50,
+      "correct": 46,
+      "accuracy": 0.92,
+      "top_confusion": {
+        "predicted_as": "kakinada_khaja",
+        "count": 2
+      }
+    },
+    {
+      "class": "chai",
+      "val_samples": 51,
+      "correct": 47,
+      "accuracy": 0.9216,
+      "top_confusion": {
+        "predicted_as": "lassi",
+        "count": 3
+      }
+    },
+    {
+      "class": "dosa",
+      "val_samples": 40,
+      "correct": 39,
+      "accuracy": 0.975,
+      "top_confusion": {
+        "predicted_as": "taquito",
+        "count": 1
+      }
+    },
+    {
+      "class": "aloo_tikki",
+      "val_samples": 7,
+      "correct": 7,
+      "accuracy": 1.0,
+      "top_confusion": null
+    },
+    {
+      "class": "bhindi_masala",
+      "val_samples": 7,
+      "correct": 7,
+      "accuracy": 1.0,
+      "top_confusion": null
+    },
+    {
+      "class": "dhokla",
+      "val_samples": 36,
+      "correct": 36,
+      "accuracy": 1.0,
+      "top_confusion": null
+    },
+    {
+      "class": "poha",
+      "val_samples": 7,
+      "correct": 7,
+      "accuracy": 1.0,
+      "top_confusion": null
+    },
+    {
+      "class": "rasgulla",
+      "val_samples": 7,
+      "correct": 7,
+      "accuracy": 1.0,
+      "top_confusion": null
+    }
+  ]
+}

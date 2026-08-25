@@ -1,0 +1,293 @@
+<title>Heallio — Color Direction Options</title>
+<style>
+  @font-face {
+    font-family: 'Sys';
+    src: local('Segoe UI'), local('San Francisco'), local('Roboto');
+  }
+
+  :root {
+    --bg: #f6f5f2;
+    --bg-tint: #efeee9;
+    --ink: #17181a;
+    --ink-soft: #5b5d61;
+    --line: #dedcd6;
+    --card-bg: #ffffff;
+    --accent: #3a3d42;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131313;
+      --bg-tint: #1a1a1a;
+      --ink: #f2f1ee;
+      --ink-soft: #a6a6a2;
+      --line: #2c2c2a;
+      --card-bg: #1c1c1b;
+      --accent: #d8d6cf;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #131313; --bg-tint: #1a1a1a; --ink: #f2f1ee; --ink-soft: #a6a6a2;
+    --line: #2c2c2a; --card-bg: #1c1c1b; --accent: #d8d6cf;
+  }
+  :root[data-theme="light"] {
+    --bg: #f6f5f2; --bg-tint: #efeee9; --ink: #17181a; --ink-soft: #5b5d61;
+    --line: #dedcd6; --card-bg: #ffffff; --accent: #3a3d42;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Sys', -apple-system, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  header.intro {
+    margin-bottom: 48px;
+    max-width: 640px;
+  }
+  header.intro .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 12px;
+    font-weight: 600;
+  }
+  header.intro h1 {
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.15;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  header.intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 60ch;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+  }
+
+  .option {
+    background: var(--card-bg);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .option-head {
+    padding: 20px 22px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .option-head .tag {
+    font-size: 11px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    margin: 0 0 6px;
+  }
+  .option-head h2 {
+    font-size: 20px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .option-head p {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .swatches {
+    display: flex;
+    height: 40px;
+  }
+  .swatches span { flex: 1; }
+
+  .mock {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+  }
+
+  .mock-card {
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .mock-card .label { font-size: 12px; opacity: 0.85; }
+  .mock-card .value { font-size: 24px; font-weight: 700; }
+
+  .mock-row { display: flex; gap: 12px; }
+  .mock-row .mock-card { flex: 1; }
+
+  .mock-btn {
+    border-radius: 12px;
+    padding: 11px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    cursor: default;
+  }
+
+  .mock-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    width: fit-content;
+  }
+
+  footer.note {
+    margin-top: 48px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    line-height: 1.6;
+  }
+
+  /* ---- Option A: Deep Teal & Ember ---- */
+  .a-bg { background: #0B3B3B; }
+  .a-bg2 { background: #0F5252; }
+  .a-bg3 { background: #FF6B4A; }
+  .a-bg4 { background: #E9E4DA; }
+  .a-card { background: #0F5252; color: #F4F1EA; }
+  .a-btn { background: #FF6B4A; color: #241205; }
+  .a-pill { background: rgba(255,107,74,0.16); color: #C8471F; }
+
+  /* ---- Option B: Midnight & Gold ---- */
+  .b-bg { background: #0E1E38; }
+  .b-bg2 { background: #16294A; }
+  .b-bg3 { background: #D4A24C; }
+  .b-bg4 { background: #E7E2D6; }
+  .b-card { background: #16294A; color: #F1EEE5; }
+  .b-btn { background: #D4A24C; color: #26190A; }
+  .b-pill { background: rgba(212,162,76,0.18); color: #93691E; }
+
+  /* ---- Option C: Graphite & Signal Blue ---- */
+  .c-bg { background: #1B1E24; }
+  .c-bg2 { background: #262A32; }
+  .c-bg3 { background: #3E8BFF; }
+  .c-bg4 { background: #DADCE2; }
+  .c-card { background: #262A32; color: #EDEEF1; }
+  .c-btn { background: #3E8BFF; color: #06132B; }
+  .c-pill { background: rgba(62,139,255,0.16); color: #2361C4; }
+</style>
+
+<div class="page">
+  <header class="intro">
+    <p class="eyebrow">Heallio &middot; color direction</p>
+    <h1>Three ways to move past &ldquo;refined emerald.&rdquo;</h1>
+    <p>The current pass kept green as the base and polished type, shadow, and spacing around it &mdash; which reads as the same app, just tidier. These three swap the primary hue itself. Each shows the same two components (a stat card and a primary button) so you can compare like-for-like. Pick one, or tell me to mix &mdash; e.g. Option A's accent with Option C's neutrals.</p>
+  </header>
+
+  <div class="options">
+
+    <div class="option">
+      <div class="option-head">
+        <p class="tag">Option A</p>
+        <h2>Deep Teal &amp; Ember</h2>
+        <p>Still reads as health/wellness, but richer and more saturated than mint-emerald. Ember accent gives it warmth and a clear call-to-action color that isn't blue or green.</p>
+      </div>
+      <div class="swatches">
+        <span class="a-bg"></span><span class="a-bg2"></span><span class="a-bg3"></span><span class="a-bg4"></span>
+      </div>
+      <div class="mock">
+        <div class="mock-row">
+          <div class="mock-card a-card">
+            <span class="label">Health score</span>
+            <span class="value">8.2</span>
+          </div>
+          <div class="mock-card a-card">
+            <span class="label">Sleep</span>
+            <span class="value">7h 40m</span>
+          </div>
+        </div>
+        <span class="mock-pill a-pill">● Consultation open</span>
+        <button class="mock-btn a-btn">Ask AI assistant</button>
+      </div>
+    </div>
+
+    <div class="option">
+      <div class="option-head">
+        <p class="tag">Option B</p>
+        <h2>Midnight &amp; Gold</h2>
+        <p>The most &ldquo;professional clinic&rdquo; of the three &mdash; navy reads as trustworthy and premium, gold accent feels considered rather than playful. Doctor mode could stay indigo/navy-adjacent for less contrast between the two roles.</p>
+      </div>
+      <div class="swatches">
+        <span class="b-bg"></span><span class="b-bg2"></span><span class="b-bg3"></span><span class="b-bg4"></span>
+      </div>
+      <div class="mock">
+        <div class="mock-row">
+          <div class="mock-card b-card">
+            <span class="label">Health score</span>
+            <span class="value">8.2</span>
+          </div>
+          <div class="mock-card b-card">
+            <span class="label">Sleep</span>
+            <span class="value">7h 40m</span>
+          </div>
+        </div>
+        <span class="mock-pill b-pill">● Consultation open</span>
+        <button class="mock-btn b-btn">Ask AI assistant</button>
+      </div>
+    </div>
+
+    <div class="option">
+      <div class="option-head">
+        <p class="tag">Option C</p>
+        <h2>Graphite &amp; Signal Blue</h2>
+        <p>The boldest departure &mdash; near-black surfaces with a vivid signal-blue accent. Reads as a modern digital-health product rather than a traditional clinic. Highest contrast with the current green identity.</p>
+      </div>
+      <div class="swatches">
+        <span class="c-bg"></span><span class="c-bg2"></span><span class="c-bg3"></span><span class="c-bg4"></span>
+      </div>
+      <div class="mock">
+        <div class="mock-row">
+          <div class="mock-card c-card">
+            <span class="label">Health score</span>
+            <span class="value">8.2</span>
+          </div>
+          <div class="mock-card c-card">
+            <span class="label">Sleep</span>
+            <span class="value">7h 40m</span>
+          </div>
+        </div>
+        <span class="mock-pill c-pill">● Consultation open</span>
+        <button class="mock-btn c-btn">Ask AI assistant</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="note">
+    Each option keeps the same layout, type, and shadow work already built &mdash; only the color tokens change. Once you pick a direction I'll swap <code>AppColors</code> in <code>app_theme.dart</code> and rebuild, so the whole app (patient + doctor modes) reflects it in one pass.
+  </footer>
+</div>

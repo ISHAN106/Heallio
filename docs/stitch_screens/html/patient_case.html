@@ -1,0 +1,137 @@
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;family=Geist:wght@400;500&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#191c22","error-container":"#93000a","surface-container-high":"#292a2e","outline":"#8b909f","on-secondary-fixed-variant":"#604100",tertiary:"#c4c6ce","secondary-container":"#7e5700",primary:"#acc7ff","on-surface-variant":"#c1c6d6","on-background":"#e3e2e7","surface-container-low":"#1a1b20","on-primary-fixed":"#001a40","surface-container-lowest":"#0d0e12","on-tertiary":"#2d3037","inverse-on-surface":"#2f3035","on-surface":"#e3e2e7","on-primary-fixed-variant":"#004491","tertiary-fixed":"#e1e2ea","surface-container":"#1f1f24","on-secondary-container":"#ffd28a","on-error":"#690005","on-error-container":"#ffdad6","tertiary-fixed-dim":"#c4c6ce","on-secondary-fixed":"#281900","on-tertiary-container":"#272a30",error:"#ffb4ab",surface:"#121317","surface-tint":"#acc7ff","outline-variant":"#414754","secondary-fixed-dim":"#f3be65",background:"#121317","surface-bright":"#38393d","surface-dim":"#121317","surface-container-highest":"#343439","secondary-fixed":"#ffdeac","primary-fixed-dim":"#acc7ff","on-primary-container":"#00285a","on-primary":"#002f67","surface-variant":"#343439","on-tertiary-fixed-variant":"#44474d","inverse-primary":"#005bbe"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"grid-margin":"40px","section-gap":"80px",gutter:"24px","container-padding":"24px"},fontFamily:{"display-lg":["Outfit"],"metric-sm":["Geist Mono"],"headline-md":["Outfit"],label:["Geist"],"body-lg":["Geist"],"metric-lg":["Geist Mono"],"body-md":["Geist"],"headline-sm":["Outfit"],"display-lg-mobile":["Outfit"]},fontSize:{"display-lg":["64px",{lineHeight:"1.1",letterSpacing:"-0.04em",fontWeight:"700"}],"metric-sm":["14px",{lineHeight:"1",letterSpacing:"0.05em",fontWeight:"500"}],"headline-md":["32px",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"700"}],label:["12px",{lineHeight:"1",letterSpacing:"0.05em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"1.6",letterSpacing:"0",fontWeight:"400"}],"metric-lg":["28px",{lineHeight:"1",letterSpacing:"-0.02em",fontWeight:"500"}],"body-md":["13px",{lineHeight:"1.5",letterSpacing:"0",fontWeight:"400"}],"headline-sm":["24px",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"700"}],"display-lg-mobile":["40px",{lineHeight:"1.1",letterSpacing:"-0.04em",fontWeight:"700"}]}}}}</script><style>@layer base{body{background-color:#0d0e12;}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.frost-edge{border-top:1px solid rgba(255,255,255,0.1);border-left:1px solid rgba(255,255,255,0.1);}}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface-container-lowest font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/55 backdrop-blur-3xl frost-edge"><div class="flex items-center px-container-padding h-16 pt-safe gap-4"><button class="w-10 h-10 flex items-center justify-center text-on-surface bg-surface-container-high/40 rounded-full" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface">Vital Details</h1></div></header><main class="relative w-full pt-16 bg-surface-container-lowest"><div class="flex flex-col w-full relative z-0">
+<!-- Dynamic Background Ambient Effect -->
+<div class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
+<div class="absolute top-[-20%] left-[-10%] w-[120%] h-[120%] bg-[radial-gradient(ellipse_at_top_left,rgba(0,40,90,0.15),transparent_50%)]"></div>
+<div class="absolute bottom-[-20%] right-[-10%] w-[120%] h-[120%] bg-[radial-gradient(ellipse_at_bottom_right,rgba(126,87,0,0.1),transparent_50%)]"></div>
+</div>
+<div class="px-container-padding pb-section-gap flex flex-col gap-section-gap pt-6 relative z-10">
+<!-- Severity Banner & Header -->
+<div class="flex flex-col gap-6 animate-fade-in-up" style="animation-delay: 0.1s;">
+<div class="bg-error/10 rounded-xl p-4 flex items-center justify-between border-t border-l border-white/10 backdrop-blur-[24px]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-metric-sm text-error uppercase tracking-widest">Elevated Risk</span>
+</div>
+<span class="font-metric-sm text-error/70">Severity: High</span>
+</div>
+<div class="flex flex-col gap-2 relative">
+<h2 class="font-display-lg-mobile text-on-surface">Elias Vance</h2>
+<div class="flex gap-3 items-center mt-2">
+<div class="bg-surface-container-high/50 px-3 py-1.5 rounded-full border-t border-l border-white/5 backdrop-blur-md inline-flex items-center gap-2">
+<span class="font-metric-sm text-on-surface-variant">42 YRS</span>
+</div>
+<div class="bg-surface-container-high/50 px-3 py-1.5 rounded-full border-t border-l border-white/5 backdrop-blur-md inline-flex items-center gap-2">
+<span class="font-metric-sm text-on-surface-variant">ID: 884-VX-9</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Action: Open Chat -->
+<div class="w-full flex justify-end animate-fade-in-up" style="animation-delay: 0.2s;">
+<button class="w-3/4 sm:w-auto bg-secondary-container text-on-secondary-container font-label text-metric-sm px-6 py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-secondary-container/90 transition-all shadow-lg active:scale-95 group relative overflow-hidden">
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined">chat_bubble</span>
+<span>Initiate Secure Comms</span>
+<div class="absolute top-0 right-0 w-2 h-2 bg-secondary rounded-full animate-pulse mr-4 mt-4"></div>
+</button>
+</div>
+<!-- Clinical Vitals Zig-Zag -->
+<div class="flex flex-col gap-4 animate-fade-in-up" style="animation-delay: 0.3s;">
+<div class="flex justify-between items-end mb-2 px-2">
+<h3 class="font-label text-on-surface-variant uppercase tracking-widest text-xs">Current Telemetry</h3>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Vitals Card Left -->
+<div class="w-[85%] self-start bg-[rgba(27,30,36,0.55)] backdrop-blur-[24px] p-container-padding rounded-2xl frost-edge shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:bg-[rgba(27,30,36,0.65)] transition-all group">
+<div class="flex justify-between items-center">
+<div class="flex flex-col gap-1">
+<span class="font-label text-on-surface-variant text-xs uppercase">Heart Rate</span>
+<span class="font-metric-lg text-primary">112 <span class="text-sm text-on-surface-variant/50">bpm</span></span>
+</div>
+<div class="w-16 h-8 opacity-70 group-hover:opacity-100 transition-opacity">
+<!-- Simple Sparkline SVG -->
+<svg class="w-full h-full stroke-primary fill-none stroke-[2] stroke-linecap-round stroke-linejoin-round" viewbox="0 0 100 30">
+<path class="animate-[dash_2s_linear_infinite]" d="M0,15 L20,15 L30,5 L40,25 L50,15 L100,15" style="stroke-dasharray: 100; stroke-dashoffset: 100;"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Vitals Card Right -->
+<div class="w-[85%] self-end bg-[rgba(27,30,36,0.55)] backdrop-blur-[24px] p-container-padding rounded-2xl frost-edge shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:bg-[rgba(27,30,36,0.65)] transition-all flex flex-col gap-2 items-end">
+<span class="font-label text-on-surface-variant text-xs uppercase">Blood Pressure</span>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-lg text-error">145</span>
+<span class="font-metric-lg text-on-surface-variant/50">/</span>
+<span class="font-metric-lg text-on-surface">92</span>
+</div>
+<span class="bg-error/20 text-error px-2 py-0.5 rounded text-[10px] font-metric-sm">SYSTOLIC HIGH</span>
+</div>
+</div>
+</div>
+<!-- Prescription Authoring (Glass Well) -->
+<div class="flex flex-col gap-6 animate-fade-in-up mt-8" style="animation-delay: 0.4s;">
+<h3 class="font-label text-on-surface-variant uppercase tracking-widest text-xs px-2">Therapeutic Directive</h3>
+<div class="bg-[rgba(27,30,36,0.55)] backdrop-blur-[24px] p-container-padding rounded-2xl frost-edge shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label text-on-surface-variant text-[10px] uppercase pl-2">Medication ID</label>
+<!-- Glass Well Input -->
+<div class="bg-black/20 rounded-xl border-t border-l border-white/5 p-4 flex items-center focus-within:bg-black/30 transition-colors">
+<span class="material-symbols-outlined text-primary/50 mr-3">medication</span>
+<input class="bg-transparent border-none outline-none text-on-surface font-metric-sm w-full placeholder:text-on-surface-variant/30" placeholder="e.g. Lisinopril 10mg" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-on-surface-variant text-[10px] uppercase pl-2">Dosage Instructions</label>
+<!-- Glass Well Input Area -->
+<div class="bg-black/20 rounded-xl border-t border-l border-white/5 p-4 focus-within:bg-black/30 transition-colors">
+<textarea class="bg-transparent border-none outline-none text-on-surface font-metric-sm w-full placeholder:text-on-surface-variant/30 resize-none h-24" placeholder="1 tablet PO daily..."></textarea>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-label text-metric-sm px-6 py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-primary/90 transition-all mt-2">
+<span class="material-symbols-outlined">fingerprint</span>
+                Authorize Script
+            </button>
+</div>
+</div>
+<!-- Rating / Clinical Assessment -->
+<div class="flex flex-col items-center justify-center gap-4 mt-8 py-8 animate-fade-in-up" style="animation-delay: 0.5s;">
+<h3 class="font-label text-on-surface-variant uppercase tracking-widest text-xs">Patient Readiness Assessment</h3>
+<div class="flex gap-2">
+<!-- Interactive Stars -->
+<button class="text-secondary hover:scale-110 transition-transform"><span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">star</span></button>
+<button class="text-secondary hover:scale-110 transition-transform"><span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">star</span></button>
+<button class="text-secondary hover:scale-110 transition-transform"><span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">star</span></button>
+<button class="text-secondary hover:scale-110 transition-transform"><span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">star_half</span></button>
+<button class="text-surface-variant hover:scale-110 transition-transform"><span class="material-symbols-outlined text-3xl">star</span></button>
+</div>
+<span class="font-metric-sm text-secondary">3.5 / 5.0 - Requires Monitoring</span>
+</div>
+</div>
+</div>
+<style>
+    @keyframes fade-in-up {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-fade-in-up {
+        opacity: 0;
+        animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+</style></main></body></html>

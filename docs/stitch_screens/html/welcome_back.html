@@ -1,0 +1,69 @@
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;family=Geist:wght@400;500&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#191c22","error-container":"#93000a","surface-container-high":"#292a2e","outline":"#8b909f","on-secondary-fixed-variant":"#604100",tertiary:"#c4c6ce","secondary-container":"#7e5700",primary:"#acc7ff","on-surface-variant":"#c1c6d6","on-background":"#e3e2e7","surface-container-low":"#1a1b20","on-primary-fixed":"#001a40","surface-container-lowest":"#0d0e12","on-tertiary":"#2d3037","inverse-on-surface":"#2f3035","on-surface":"#e3e2e7","on-primary-fixed-variant":"#004491","tertiary-fixed":"#e1e2ea","surface-container":"#1f1f24","on-secondary-container":"#ffd28a","on-error":"#690005","on-error-container":"#ffdad6","tertiary-fixed-dim":"#c4c6ce","on-secondary-fixed":"#281900","on-tertiary-container":"#272a30",error:"#ffb4ab",surface:"#121317","surface-tint":"#acc7ff","outline-variant":"#414754","secondary-fixed-dim":"#f3be65",background:"#121317","surface-bright":"#38393d","surface-dim":"#121317","surface-container-highest":"#343439","secondary-fixed":"#ffdeac","primary-fixed-dim":"#acc7ff","on-primary-container":"#00285a","on-primary":"#002f67","surface-variant":"#343439","on-tertiary-fixed-variant":"#44474d","inverse-primary":"#005bbe"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"grid-margin":"40px","section-gap":"80px",gutter:"24px","container-padding":"24px"},fontFamily:{"display-lg":["Outfit"],"metric-sm":["Geist Mono"],"headline-md":["Outfit"],label:["Geist"],"body-lg":["Geist"],"metric-lg":["Geist Mono"],"body-md":["Geist"],"headline-sm":["Outfit"],"display-lg-mobile":["Outfit"]},fontSize:{"display-lg":["64px",{lineHeight:"1.1",letterSpacing:"-0.04em",fontWeight:"700"}],"metric-sm":["14px",{lineHeight:"1",letterSpacing:"0.05em",fontWeight:"500"}],"headline-md":["32px",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"700"}],label:["12px",{lineHeight:"1",letterSpacing:"0.05em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"1.6",letterSpacing:"0",fontWeight:"400"}],"metric-lg":["28px",{lineHeight:"1",letterSpacing:"-0.02em",fontWeight:"500"}],"body-md":["13px",{lineHeight:"1.5",letterSpacing:"0",fontWeight:"400"}],"headline-sm":["24px",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"700"}],"display-lg-mobile":["40px",{lineHeight:"1.1",letterSpacing:"-0.04em",fontWeight:"700"}]}}}}</script><style>@layer base{body{background-color:#0d0e12;}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface-container-lowest font-body-md text-on-surface"><main class="relative w-full min-h-screen pt-safe pb-safe"><div class="flex flex-col w-full h-full p-container-padding justify-center min-h-[calc(100vh-env(safe-area-inset-top)-env(safe-area-inset-bottom))]">
+<div class="relative w-full max-w-md mx-auto rounded-[24px] overflow-hidden p-6" id="login-card" style="background-color: rgba(27,30,36,0.55); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); box-shadow: 0 8px 32px rgba(0,0,0,0.4); border-top: 1px solid rgba(255,255,255,0.1); border-left: 1px solid rgba(255,255,255,0.1);">
+<div class="mb-section-gap">
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-on-surface mb-2">Welcome Back</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Access your clinical dashboard securely.</p>
+</div>
+<form class="flex flex-col gap-gutter" onsubmit="event.preventDefault();">
+<div class="flex flex-col gap-2">
+<label class="font-label text-label text-on-surface-variant uppercase tracking-wider" for="email">Email Address</label>
+<div class="relative w-full rounded-lg overflow-hidden" style="background-color: rgba(0,0,0,0.2); border-top: 1px solid rgba(0,0,0,0.4); border-left: 1px solid rgba(0,0,0,0.4);">
+<input class="w-full bg-transparent border-none p-4 font-metric-sm text-metric-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary placeholder:text-outline" id="email" placeholder="doctor@clinic.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-label text-label text-on-surface-variant uppercase tracking-wider" for="password">Password</label>
+<button class="font-label text-label text-primary hover:text-primary-fixed-dim bg-transparent border-none p-0 cursor-pointer" type="button">Forgot?</button>
+</div>
+<div class="relative w-full rounded-lg overflow-hidden" style="background-color: rgba(0,0,0,0.2); border-top: 1px solid rgba(0,0,0,0.4); border-left: 1px solid rgba(0,0,0,0.4);">
+<input class="w-full bg-transparent border-none p-4 font-metric-sm text-metric-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary placeholder:text-outline" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface p-1 rounded-full cursor-pointer bg-transparent border-none" onclick="togglePassword()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="visibility-icon">visibility</span>
+</button>
+</div>
+</div>
+<button class="w-full mt-4 bg-primary text-on-primary font-headline-sm text-headline-sm rounded-[16px] py-4 transition-transform active:scale-[0.98] hover:bg-primary-fixed hover:text-on-primary-fixed cursor-pointer text-center flex items-center justify-center gap-2" type="submit">
+<span>Authenticate</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">login</span>
+</button>
+</form>
+<div class="mt-8 pt-6 relative border-t border-t-[rgba(255,255,255,0.05)]">
+<button class="w-full text-center py-3 bg-transparent border-none text-on-surface-variant hover:text-on-surface cursor-pointer rounded-lg hover:bg-[rgba(255,255,255,0.05)] transition-colors flex items-center justify-center gap-2">
+<span class="font-body-md text-body-md">New to Heallio?</span>
+<span class="font-headline-sm text-[16px] text-primary">Create Account</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    function togglePassword() {
+        const input = document.getElementById('password');
+        const icon = document.getElementById('visibility-icon');
+        if (input.type === 'password') {
+            input.type = 'text';
+            icon.textContent = 'visibility_off';
+        } else {
+            input.type = 'password';
+            icon.textContent = 'visibility';
+        }
+    }
+
+    const card = document.getElementById('login-card');
+    card.addEventListener('mouseenter', () => {
+        card.style.backgroundColor = 'rgba(27,30,36,0.65)';
+        card.style.borderTop = '1px solid rgba(255,255,255,0.2)';
+        card.style.borderLeft = '1px solid rgba(255,255,255,0.2)';
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.backgroundColor = 'rgba(27,30,36,0.55)';
+        card.style.borderTop = '1px solid rgba(255,255,255,0.1)';
+        card.style.borderLeft = '1px solid rgba(255,255,255,0.1)';
+    });
+</script></main></body></html>

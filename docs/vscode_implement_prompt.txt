@@ -1,0 +1,32 @@
+Implement all 14 Stitch-designed screens into the Flutter app at health_app/, replacing each existing screen's visuals with the new glassmorphism design while preserving all existing logic (Riverpod providers, API calls, navigation, form validation).
+
+Reference material (read before starting):
+- docs/stitch_design_prompt.md — the design system spec (colors, typography, component rules)
+- docs/stitch_screens/html/*.html — actual generated markup/CSS per screen (source of truth for layout/spacing/visual detail)
+- docs/stitch_screens/images/*.png — screenshots, use for a quick visual check
+- health_app/lib/theme/app_theme.dart — current AppColors/AppSpacing tokens, update these to match the Stitch design system's glass tokens (glassPanel, glassRaised, glassWell, frostEdge, Outfit/Geist fonts) if not already present
+- health_app/lib/widgets/common_widgets.dart — shared components (AppCard, PrimaryButton, SecondaryButton, CustomTextField, LoadingState, ErrorState, EmptyState). Reuse these, extend them if a screen needs a variant, don't hand-roll duplicates.
+
+Screen mapping (Stitch HTML -> Flutter file):
+1. choose_role.html -> lib/screens/auth/auth_choice_screen.dart
+2. welcome_back.html -> lib/screens/auth/login_screen.dart + signup_screen.dart (shared visual language)
+3. home.html -> lib/screens/home/home_screen.dart
+4. tracking.html -> lib/screens/health/health_tracking_screen.dart
+5. heallio_ai.html -> lib/screens/chat/chat_screen.dart
+6. insights.html -> lib/screens/insights/insights_screen.dart
+7. body_scan.html -> lib/screens/scan/body_scan_screen.dart
+8. prescriptions.html -> lib/screens/consultation/prescriptions_screen.dart
+9. prescription_form.html -> lib/screens/consultation/prescription_form_screen.dart
+10. profile.html -> lib/screens/profile/profile_screen.dart
+11. clinical_access.html -> lib/screens/auth/doctor_auth_screen.dart
+12. clinical_dashboard.html -> lib/screens/doctor/doctor_navigation_screen.dart (dashboard section)
+13. patient_case.html -> lib/screens/consultation/consultation_screen.dart
+14. consultation.html -> lib/screens/consultation/consultation_thread_screen.dart
+
+Rules:
+- Go one screen at a time. After each screen, run `flutter analyze` on the changed file and fix errors before moving on.
+- Don't touch providers/, services/, models/ — visuals only. If a screen needs new state (e.g. a field the old screen didn't have), flag it instead of inventing backend calls.
+- Patient screens use Signal Blue (#3E8BFF) only. Doctor screens (clinical_access, clinical_dashboard) use Clinical Gold (#D4A24C) only — never both on one screen.
+- Reuse AppCard for every card/panel. No raw Card() or hand-rolled Container-as-card.
+- Keep all existing onTap/onPressed logic wired to the same handlers — only restyle the widget tree around them.
+- After all 14 are done, run `flutter analyze` on the whole lib/ and report remaining warnings.

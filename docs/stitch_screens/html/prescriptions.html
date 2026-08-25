@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prescriptions | HealthTech Clinical</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #0D0E12;
+            color: #e3e2e7;
+            font-family: 'Geist', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .glass-panel {
+            background: rgba(27, 30, 36, 0.55);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-panel:hover {
+            background: rgba(27, 30, 36, 0.65);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .frost-separator {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .pull-to-refresh-anim {
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        .shimmer-text {
+            background: linear-gradient(90deg, #acc7ff, #3E8BFF, #acc7ff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 4s linear infinite;
+        }
+
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+
+        .scroll-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#8e9098",
+                        "on-error": "#690005",
+                        "surface-bright": "#38393d",
+                        "secondary-fixed": "#ffdeac",
+                        "on-surface": "#e3e2e7",
+                        "secondary-container": "#7e5700",
+                        "on-tertiary-container": "#272a30",
+                        "inverse-surface": "#e3e2e7",
+                        "outline-variant": "#414754",
+                        "surface-container-low": "#1a1b20",
+                        "surface-variant": "#343439",
+                        "on-tertiary-fixed": "#191c22",
+                        "error-container": "#93000a",
+                        "on-primary-fixed-variant": "#004491",
+                        "secondary": "#f3be65",
+                        "secondary-fixed-dim": "#f3be65",
+                        "on-secondary-fixed-variant": "#604100",
+                        "primary-fixed-dim": "#acc7ff",
+                        "on-secondary-container": "#ffd28a",
+                        "tertiary-fixed-dim": "#c4c6ce",
+                        "surface-tint": "#acc7ff",
+                        "tertiary": "#c4c6ce",
+                        "primary-fixed": "#d7e2ff",
+                        "tertiary-fixed": "#e1e2ea",
+                        "inverse-primary": "#005bbe",
+                        "surface-container-high": "#292a2e",
+                        "on-primary": "#002f67",
+                        "surface-dim": "#121317",
+                        "error": "#ffb4ab",
+                        "inverse-on-surface": "#2f3035",
+                        "on-secondary-fixed": "#281900",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#121317",
+                        "surface-container-highest": "#343439",
+                        "primary": "#acc7ff",
+                        "on-tertiary": "#2d3037",
+                        "primary-container": "#478fff",
+                        "on-tertiary-fixed-variant": "#44474d",
+                        "on-surface-variant": "#c1c6d6",
+                        "surface-container-lowest": "#0d0e12",
+                        "surface-container": "#1f1f24",
+                        "on-background": "#e3e2e7",
+                        "on-primary-container": "#00285a",
+                        "outline": "#8b909f",
+                        "on-primary-fixed": "#001a40",
+                        "on-secondary": "#432c00",
+                        "background": "#121317",
+                        "signal-blue": "#3E8BFF",
+                        "vital-green": "#4ade80"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "16px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "80px",
+                        "grid-margin": "40px",
+                        "container-padding": "24px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Geist"],
+                        "metric-sm": ["Geist Mono"],
+                        "headline-md": ["Outfit"],
+                        "metric-lg": ["Geist Mono"],
+                        "display-lg-mobile": ["Outfit"],
+                        "label": ["Geist"],
+                        "display-lg": ["Outfit"],
+                        "headline-sm": ["Outfit"],
+                        "body-md": ["Geist"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["15px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "metric-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "metric-lg": ["28px", {"lineHeight": "1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "label": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["13px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface overflow-x-hidden">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/55 backdrop-blur-3xl shadow-sm border-b border-white/5 flex items-center px-grid-margin h-16">
+<div class="flex items-center gap-4">
+<button class="p-2 -ml-2 rounded-full hover:bg-white/10 transition-colors active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary">arrow_back</span>
+</button>
+<h1 class="font-headline-sm text-headline-sm font-bold text-on-surface">Prescriptions</h1>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-4 md:px-grid-margin max-w-3xl mx-auto min-h-screen">
+<!-- Pull to Refresh Simulation -->
+<div class="flex justify-center mb-8 opacity-40">
+<div class="pull-to-refresh-anim flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 200;">expand_more</span>
+<span class="font-label text-label tracking-widest uppercase">Release to Refresh</span>
+</div>
+</div>
+<!-- Vertical Scrolling List -->
+<div class="flex flex-col gap-8">
+<!-- Card 1: Active -->
+<div class="glass-panel rounded-2xl p-6 transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-1">Dr. Alistair Khan</h2>
+<p class="font-body-md text-on-surface-variant">Cardiology Specialist</p>
+</div>
+<div class="flex flex-col items-end gap-3">
+<span class="bg-vital-green/10 text-vital-green px-3 py-1 rounded-full font-label text-label uppercase tracking-wider border border-vital-green/20">Active</span>
+<span class="font-metric-sm text-metric-sm text-on-surface-variant/60">OCT 24, 2023</span>
+</div>
+</div>
+<div class="space-y-6">
+<div class="frost-separator pb-4">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-headline-sm text-[18px] text-primary">Lisinopril</span>
+<span class="font-metric-sm text-metric-sm text-on-surface">10mg — 1x Daily</span>
+</div>
+<p class="font-body-md text-on-surface-variant bg-black/20 p-3 rounded-lg border border-white/5 italic">
+                            "Take with food in the morning. Avoid grapefruit."
+                        </p>
+</div>
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-headline-sm text-[18px] text-primary">Atorvastatin</span>
+<span class="font-metric-sm text-metric-sm text-on-surface">20mg — Nightly</span>
+</div>
+<p class="font-body-md text-on-surface-variant bg-black/20 p-3 rounded-lg border border-white/5 italic">
+                            "Take before sleep. Report any muscle pain immediately."
+                        </p>
+</div>
+</div>
+<button class="w-full mt-8 bg-signal-blue text-white font-label py-4 rounded-2xl active:scale-[0.98] transition-transform hover:shadow-[0_0_20px_rgba(62,139,255,0.3)]">
+                    VIEW QR PHARMACY CODE
+                </button>
+</div>
+<!-- Card 2: Completed -->
+<div class="glass-panel rounded-2xl p-6 opacity-80 transition-all duration-300 hover:opacity-100">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-1">Dr. Elena Rossi</h2>
+<p class="font-body-md text-on-surface-variant">General Practitioner</p>
+</div>
+<div class="flex flex-col items-end gap-3">
+<span class="bg-signal-blue/10 text-signal-blue px-3 py-1 rounded-full font-label text-label uppercase tracking-wider border border-signal-blue/20">Completed</span>
+<span class="font-metric-sm text-metric-sm text-on-surface-variant/60">SEP 12, 2023</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-baseline">
+<span class="font-headline-sm text-[18px] text-on-surface/70 line-through decoration-on-surface-variant">Amoxicillin</span>
+<span class="font-metric-sm text-metric-sm text-on-surface-variant">500mg — 3x Daily</span>
+</div>
+<p class="font-body-md text-on-surface-variant/60 italic">
+                        "Complete full 7-day course even if feeling better."
+                    </p>
+</div>
+</div>
+<!-- Card 3: Superseded -->
+<div class="glass-panel rounded-2xl p-6 opacity-60 transition-all duration-300 hover:opacity-100">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-1">Dr. Alistair Khan</h2>
+<p class="font-body-md text-on-surface-variant">Cardiology Specialist</p>
+</div>
+<div class="flex flex-col items-end gap-3">
+<span class="bg-white/5 text-on-surface-variant px-3 py-1 rounded-full font-label text-label uppercase tracking-wider border border-white/10">Superseded</span>
+<span class="font-metric-sm text-metric-sm text-on-surface-variant/60">AUG 05, 2023</span>
+</div>
+</div>
+<div class="flex justify-between items-baseline opacity-50">
+<span class="font-headline-sm text-[18px] text-on-surface">Lisinopril</span>
+<span class="font-metric-sm text-metric-sm text-on-surface">5mg — 1x Daily</span>
+</div>
+</div>
+<!-- Empty State / Footer Info -->
+<div class="glass-panel rounded-2xl p-8 text-center flex flex-col items-center gap-6 mt-12 border-dashed border-2 border-white/5 bg-transparent">
+<div class="relative w-32 h-32 flex items-center justify-center">
+<div class="absolute inset-0 bg-primary/10 blur-3xl rounded-full"></div>
+<span class="material-symbols-outlined text-primary text-6xl" style="font-variation-settings: 'wght' 200;">prescriptions</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">No more prescriptions</h3>
+<p class="font-body-lg text-on-surface-variant max-w-xs mx-auto">
+                        Your issued prescriptions will appear here once authorized by your clinical team.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<footer class="fixed bottom-0 left-0 w-full z-50 bg-surface/55 backdrop-blur-3xl rounded-t-xl border-t border-white/5 shadow-[0_-4px_24px_rgba(0,0,0,0.4)] flex justify-around items-center px-4 py-3 pb-safe">
+<!-- Health -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90">
+<span class="material-symbols-outlined mb-1">favorite</span>
+<span class="font-label text-label">Health</span>
+</button>
+<!-- Scripts (Active) -->
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1.5 active:scale-90 transition-transform">
+<span class="material-symbols-outlined mb-1">description</span>
+<span class="font-label text-label">Scripts</span>
+</button>
+<!-- Consults -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90">
+<span class="material-symbols-outlined mb-1">medical_services</span>
+<span class="font-label text-label">Consults</span>
+</button>
+<!-- Profile -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-label text-label">Profile</span>
+</button>
+</footer>
+<script>
+        // Simple micro-interaction for cards
+        document.querySelectorAll('.glass-panel').forEach(card => {
+            card.addEventListener('click', function() {
+                this.classList.toggle('ring-1');
+                this.classList.toggle('ring-primary/30');
+            });
+        });
+
+        // Pull to refresh simulation logic
+        let startY = 0;
+        document.addEventListener('touchstart', e => startY = e.touches[0].pageY);
+        document.addEventListener('touchmove', e => {
+            const y = e.touches[0].pageY;
+            if (window.scrollY === 0 && y > startY) {
+                // Potential pull to refresh visual trigger could go here
+            }
+        });
+    </script>
+</body></html>

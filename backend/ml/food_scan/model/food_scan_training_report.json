@@ -1,0 +1,327 @@
+{
+  "feature_names": [
+    "mean_red",
+    "mean_green",
+    "mean_blue",
+    "std_red",
+    "std_green",
+    "std_blue",
+    "brightness",
+    "saturation",
+    "contrast",
+    "edge_density",
+    "warm_balance",
+    "green_balance",
+    "entropy",
+    "aspect_ratio",
+    "red_hist_0",
+    "red_hist_1",
+    "red_hist_2",
+    "red_hist_3",
+    "red_hist_4",
+    "red_hist_5",
+    "green_hist_0",
+    "green_hist_1",
+    "green_hist_2",
+    "green_hist_3",
+    "green_hist_4",
+    "green_hist_5",
+    "blue_hist_0",
+    "blue_hist_1",
+    "blue_hist_2",
+    "blue_hist_3",
+    "blue_hist_4",
+    "blue_hist_5"
+  ],
+  "classes": [
+    "burger",
+    "creamy_pasta",
+    "fruit_bowl",
+    "omelette",
+    "pizza_slice",
+    "rice_bowl",
+    "salad_bowl",
+    "sandwich",
+    "soup"
+  ],
+  "dataset_source": "synthetic",
+  "classifier_accuracy": 0.9806,
+  "portion_mae_grams": 21.65,
+  "samples_per_class": 400,
+  "profiles": [
+    {
+      "key": "salad_bowl",
+      "display_name": "Mixed salad bowl",
+      "portion_label": "1 large bowl",
+      "portion_grams": 180,
+      "nutrition_per_100g": {
+        "calories": 95,
+        "carbs": 9,
+        "protein": 4,
+        "fat": 5,
+        "fiber": 3,
+        "sugar": 4
+      },
+      "micronutrients_per_100g": {
+        "Vitamin A": 18,
+        "Vitamin C": 22,
+        "Folate": 14,
+        "Iron": 7,
+        "Potassium": 12
+      },
+      "contents": [
+        "lettuce",
+        "cucumber",
+        "tomato",
+        "seeds",
+        "light dressing"
+      ],
+      "feature_noise": 0.05,
+      "portion_noise": 22,
+      "suggested_meal_type": "lunch"
+    },
+    {
+      "key": "pizza_slice",
+      "display_name": "Veg pizza slice",
+      "portion_label": "2 medium slices",
+      "portion_grams": 210,
+      "nutrition_per_100g": {
+        "calories": 265,
+        "carbs": 29,
+        "protein": 11,
+        "fat": 10,
+        "fiber": 2,
+        "sugar": 4
+      },
+      "micronutrients_per_100g": {
+        "Vitamin A": 9,
+        "Vitamin C": 11,
+        "Calcium": 16,
+        "Iron": 8,
+        "Potassium": 7
+      },
+      "contents": [
+        "wheat crust",
+        "cheese",
+        "tomato sauce",
+        "capsicum",
+        "onion"
+      ],
+      "feature_noise": 0.06,
+      "portion_noise": 24,
+      "suggested_meal_type": "dinner"
+    },
+    {
+      "key": "burger",
+      "display_name": "Chicken burger",
+      "portion_label": "1 burger",
+      "portion_grams": 230,
+      "nutrition_per_100g": {
+        "calories": 240,
+        "carbs": 23,
+        "protein": 13,
+        "fat": 11,
+        "fiber": 2,
+        "sugar": 4
+      },
+      "micronutrients_per_100g": {
+        "Vitamin B3": 14,
+        "Vitamin B12": 11,
+        "Iron": 10,
+        "Calcium": 6,
+        "Potassium": 8
+      },
+      "contents": [
+        "bun",
+        "chicken patty",
+        "lettuce",
+        "tomato",
+        "sauce"
+      ],
+      "feature_noise": 0.06,
+      "portion_noise": 28,
+      "suggested_meal_type": "lunch"
+    },
+    {
+      "key": "rice_bowl",
+      "display_name": "Rice bowl",
+      "portion_label": "1 medium bowl",
+      "portion_grams": 250,
+      "nutrition_per_100g": {
+        "calories": 172,
+        "carbs": 28,
+        "protein": 4,
+        "fat": 5,
+        "fiber": 2,
+        "sugar": 1
+      },
+      "micronutrients_per_100g": {
+        "Vitamin B1": 6,
+        "Vitamin B6": 5,
+        "Magnesium": 8,
+        "Iron": 5,
+        "Potassium": 7
+      },
+      "contents": [
+        "rice",
+        "vegetables",
+        "spices",
+        "ghee"
+      ],
+      "feature_noise": 0.05,
+      "portion_noise": 32,
+      "suggested_meal_type": "lunch"
+    },
+    {
+      "key": "fruit_bowl",
+      "display_name": "Mixed fruit bowl",
+      "portion_label": "1 small bowl",
+      "portion_grams": 160,
+      "nutrition_per_100g": {
+        "calories": 62,
+        "carbs": 15,
+        "protein": 1,
+        "fat": 0,
+        "fiber": 2,
+        "sugar": 12
+      },
+      "micronutrients_per_100g": {
+        "Vitamin C": 25,
+        "Vitamin A": 10,
+        "Folate": 7,
+        "Potassium": 14,
+        "Manganese": 9
+      },
+      "contents": [
+        "apple",
+        "banana",
+        "berries",
+        "melon"
+      ],
+      "feature_noise": 0.06,
+      "portion_noise": 18,
+      "suggested_meal_type": "snack"
+    },
+    {
+      "key": "creamy_pasta",
+      "display_name": "Creamy pasta",
+      "portion_label": "1 deep plate",
+      "portion_grams": 240,
+      "nutrition_per_100g": {
+        "calories": 232,
+        "carbs": 27,
+        "protein": 7,
+        "fat": 10,
+        "fiber": 2,
+        "sugar": 3
+      },
+      "micronutrients_per_100g": {
+        "Vitamin B2": 7,
+        "Vitamin B6": 6,
+        "Calcium": 11,
+        "Iron": 8,
+        "Potassium": 7
+      },
+      "contents": [
+        "pasta",
+        "cream sauce",
+        "herbs",
+        "cheese"
+      ],
+      "feature_noise": 0.06,
+      "portion_noise": 28,
+      "suggested_meal_type": "dinner"
+    },
+    {
+      "key": "omelette",
+      "display_name": "Egg omelette",
+      "portion_label": "2 eggs with toppings",
+      "portion_grams": 150,
+      "nutrition_per_100g": {
+        "calories": 154,
+        "carbs": 2,
+        "protein": 11,
+        "fat": 11,
+        "fiber": 0,
+        "sugar": 1
+      },
+      "micronutrients_per_100g": {
+        "Vitamin B12": 23,
+        "Vitamin D": 12,
+        "Iron": 6,
+        "Choline": 18,
+        "Selenium": 20
+      },
+      "contents": [
+        "eggs",
+        "onion",
+        "tomato",
+        "peppers",
+        "oil"
+      ],
+      "feature_noise": 0.05,
+      "portion_noise": 15,
+      "suggested_meal_type": "breakfast"
+    },
+    {
+      "key": "soup",
+      "display_name": "Soup bowl",
+      "portion_label": "1 bowl",
+      "portion_grams": 220,
+      "nutrition_per_100g": {
+        "calories": 78,
+        "carbs": 10,
+        "protein": 3,
+        "fat": 3,
+        "fiber": 2,
+        "sugar": 3
+      },
+      "micronutrients_per_100g": {
+        "Vitamin A": 8,
+        "Vitamin C": 10,
+        "Calcium": 5,
+        "Iron": 4,
+        "Potassium": 9
+      },
+      "contents": [
+        "broth",
+        "vegetables",
+        "herbs",
+        "seasoning"
+      ],
+      "feature_noise": 0.05,
+      "portion_noise": 20,
+      "suggested_meal_type": "dinner"
+    },
+    {
+      "key": "sandwich",
+      "display_name": "Veg sandwich",
+      "portion_label": "1 sandwich",
+      "portion_grams": 180,
+      "nutrition_per_100g": {
+        "calories": 185,
+        "carbs": 21,
+        "protein": 7,
+        "fat": 7,
+        "fiber": 3,
+        "sugar": 3
+      },
+      "micronutrients_per_100g": {
+        "Vitamin B1": 7,
+        "Vitamin C": 8,
+        "Folate": 6,
+        "Iron": 6,
+        "Potassium": 7
+      },
+      "contents": [
+        "bread",
+        "vegetables",
+        "spread",
+        "cheese"
+      ],
+      "feature_noise": 0.05,
+      "portion_noise": 20,
+      "suggested_meal_type": "snack"
+    }
+  ]
+}

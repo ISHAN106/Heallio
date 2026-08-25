@@ -1,0 +1,1 @@
+"""Food scan model package."""

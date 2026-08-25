@@ -7,3 +7,4 @@ health_app/.dart_tool/
 *.db
 backend/.env.test_local
 .shots/
+health_app/android/app/key.properties

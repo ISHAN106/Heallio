@@ -115,7 +115,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                             ),
                             labelTrailing: GhostButton(
                               label: 'Forgot?',
-                              onPressed: () {},
+                              onPressed: () {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(
+                                    content: Text('Password reset isn\'t available yet — contact support.'),
+                                  ),
+                                );
+                              },
                             ),
                             validator: (value) {
                               if (value?.isEmpty ?? true) {
